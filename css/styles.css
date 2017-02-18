@@ -2,8 +2,10 @@
  * Setup by Umi Ikem on 17/02/2017
  */
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:400,700|Sacramento');
 
 
+/* Structural Styles*/
 
 * { 
   box-sizing: border-box;
@@ -13,11 +15,14 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Oswald', sans-serif;
+}
 
 /* Link Styles */
 
@@ -37,6 +42,7 @@ a:hover {
   font-size:1.6rem;
   margin:12px 0 0 20px;
   font-family: 'Sacramento', cursive;
+  letter-spacing: 0.2rem;
 }
 
 .main-nav {
@@ -84,27 +90,105 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 70px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 5px solid #dedede;
   transition: all .5s;
 }
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  -webkit-animation: profile-image 1s ease;
+  animation: profile-image 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Code for animation of profile image */
+
+@-webkit-keyframes profile-image
+{
+  15%
+  {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30%
+  {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50%
+  {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65%
+  {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80%
+  {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100%
+  {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes profile-image
+{
+  15%
+  {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30%
+  {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50%
+  {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65%
+  {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80%
+  {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100%
+  {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* End of profile image animation */
+
+header .profile-content {
+  margin-top:1.2rem;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(34,34,34,0.3);
+  color:#f6f4f4;
 }
 .card {
   margin: 30px;
@@ -117,7 +201,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #c70808;
 }
 
 ul.skills {
@@ -128,14 +212,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #3f3f3f;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: rgba(199,8,8,0.8);
 }
 
 footer {
@@ -192,7 +276,7 @@ a.social:hover {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
-      -ms-flex-pack: distribute;
+      -ms-flex-pack: justify;
       justify-content: space-around;
       margin: 0 auto;
   }
