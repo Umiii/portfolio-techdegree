@@ -48,3 +48,5 @@ Temporary Items
 
 # XML files for this project
 *.xml
+*.iml
+*.name
