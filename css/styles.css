@@ -52,6 +52,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index:999999999;
 }
 .nav {
   display: flex;
@@ -74,8 +75,11 @@ a:hover {
   color:white;
   transition: all .5s;
 }
+
 .nav a:hover {
-  color: white
+  border-bottom:2px solid white;
+  padding-bottom:19px;
+  transition: all .5s;
 }
 
 header {
@@ -85,6 +89,7 @@ header {
   overflow: hidden;
   padding-top: 60px;
   background-position: 0 -80px;
+  min-height:540px;
 }
 header {
   line-height: 1.5;
@@ -176,19 +181,19 @@ header .profile-image:hover {
 
 /* End of profile image animation */
 
-header .profile-content {
-  margin-top:1.2rem;
-}
+
 .tag {
   color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  font-weight: bold;
 } 
 .location {
   background-color: rgba(34,34,34,0.3);
   color:#f6f4f4;
+
 }
 .card {
   margin: 30px;
@@ -199,9 +204,20 @@ header .profile-content {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  z-index:9999999;
 }
 .card:hover {
   border-color: #c70808;
+}
+
+.card h2:before {
+  content:"";
+  display: inline-block;
+  height:12px;
+  width:12px;
+  background-color:#c70808;
+  margin-right:8px;
+  border-radius:50%;
 }
 
 ul.skills {
@@ -269,13 +285,59 @@ a.social:hover {
   clear: both;
 }
 
+/* Hobbies Section */
+
+.hobbies {
+  padding:0;
+  margin-top:15px;
+}
+
+.hobbies li {
+  display:inline-block;
+  margin-right:1px;
+}
+
+
+
+/* Styles for Experience Page */
+
+.experience {
+  margin-top: 120px;
+}
+
+.projects {
+  padding:0;
+  margin-top:3.5rem;
+}
+
+.projects li {
+  display: inline-block;
+  margin-right:4.2rem;
+}
+
+.projects li:last-child {
+  margin-right:0;
+}
+
+
+/* Styles for Contact Page */
+
+.contact-card {
+  margin-top:10rem;
+}
+
+.contact-map {
+  height:360px;
+  width:670px;
+}
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
-      max-width: 1200px;
       -ms-flex-pack: justify;
       justify-content: space-around;
       margin: 0 auto;
@@ -283,6 +345,10 @@ a.social:hover {
 
   header {
     min-height: 470px;
+  }
+
+  header .profile-content {
+    margin-top:1.2rem;
   }
 
   .nav {
@@ -299,10 +365,39 @@ a.social:hover {
     line-height: 1.6em;
   }
 
+  .overlay-bg {
+    position: relative;
+  }
+
+  .overlay-bg:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.07;
+    background: url('../images/overlay-bg.jpg') 50% 0 no-repeat;
+    background-size: cover;
+    z-index:5;
+  }
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  /* Styles for experience page */
+
+  .experience {
+    max-width: 1400px;
+
+  }
+
+  .contact-card {
+    max-width:800px;
   }
 
 }
