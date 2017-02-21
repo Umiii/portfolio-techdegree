@@ -83,7 +83,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('../images/portfolio-bg.jpg') no-repeat top center ;
+  background: url('images/portfolio-bg.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -269,13 +269,13 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(../images/twitter.svg);
+  background-image: url(images/twitter.svg);
 }
 a.linkedin {
-  background-image: url(../images/linkedin.svg);
+  background-image: url(images/linkedin.svg);
 }
 a.github {
-  background-image: url(../images/github.svg);
+  background-image: url(images/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -377,7 +377,7 @@ a.social:hover {
     width: 100%;
     height: 100%;
     opacity: 0.07;
-    background: url('../images/overlay-bg.jpg') 50% 0 no-repeat;
+    background: url('images/overlay-bg.jpg') 50% 0 no-repeat;
     background-size: cover;
     z-index:5;
   }
