@@ -301,6 +301,28 @@ a.social:hover {
   width:670px;
 }
 
+.social-links {
+  list-style: none;
+  padding:0;
+}
+
+.social-links li {
+  display:inline-block;
+  font-size:4rem;
+  margin-right:0.5rem;
+}
+
+.fa-linkedin-square {
+  color:rgb(0, 119, 181);
+}
+
+.fa-github-square {
+  color:rgb(110, 84, 148);
+}
+
+.fa-twitter-square{
+color:rgb(0, 172, 237);
+ }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {

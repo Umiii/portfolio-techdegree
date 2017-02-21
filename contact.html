@@ -5,6 +5,7 @@
   <title>Umi's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://use.fontawesome.com/a702fc9918.js"></script>
 <body>
 
 <div class="main-nav">
@@ -20,8 +21,14 @@
 <main class="flex">
   <div class="card contact-card">
     <h2>Contact Me</h2>
-    <div id="map" class="contact-map">
-    </div>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/umiikem"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </li>
+      <li><a href="http://github.com/Umiii"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      </li>
+      <li><a href="http://twitter.com/webtekniks"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      </li>
+    </ul>
   </div>
 </main>
 
@@ -35,24 +42,5 @@
 </footer>
 
 
-
-
-<script>
-  function initMap() {
-    var livestream = {lat: 6.457512, lng: 3.415343};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: livestream
-    });
-    var marker = new google.maps.Marker({
-      position: livestream,
-      map: map,
-      title: 'Dolphin Estate, Lagos. Nigeria'
-    });
-  }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-enh1tSMKTokjHEqYftpb3Yh_kClQ_E&callback=initMap">
-</script>
 </body>
 </html>
