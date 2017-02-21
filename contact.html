@@ -5,54 +5,54 @@
   <title>Umi's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <body>
+<body>
 
-    <div class="main-nav">
-        <h2 class="logo">Umi Ikem</h2>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>  <!-- end of main-nav -->
-
-
-    <main class="flex">
-      <div class="card contact-card">
-          <h2>Contact Me</h2>
-          <div id="map" class="contact-map">
-          </div>
-      </div>
-    </main>
-
-    <footer>
-      <ul>
-        <li><a href="http://twitter.com/webtekniks" class="social twitter" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/umiikem" class="social linkedin" target="_blank">LinkedIn</a></li>
-        <li><a href="http://github.com/Umiii" class="social github" target="_blank">Github</a></li>
-      </ul>
-
-    </footer>
+<div class="main-nav">
+  <h2 class="logo">Umi Ikem</h2>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>  <!-- end of main-nav -->
 
 
+<main class="flex">
+  <div class="card contact-card">
+    <h2>Contact Me</h2>
+    <div id="map" class="contact-map">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <ul>
+    <li><a href="http://twitter.com/webtekniks" class="social twitter" target="_blank">Twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/umiikem" class="social linkedin" target="_blank">LinkedIn</a></li>
+    <li><a href="http://github.com/Umiii" class="social github" target="_blank">Github</a></li>
+  </ul>
+  <h6 class="copyright">Copyright 2017 - Umi Ikem</h6>
+</footer>
 
 
-    <script>
-      function initMap() {
-        var livestream = {lat: 6.457512, lng: 3.415343};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: livestream
-        });
-        var marker = new google.maps.Marker({
-          position: livestream,
-          map: map,
-          title: 'Dolphin Estate, Lagos. Nigeria'
-        });
-      }
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-enh1tSMKTokjHEqYftpb3Yh_kClQ_E&callback=initMap">
-    </script>
-  </body>
-  </html>
+
+
+<script>
+  function initMap() {
+    var livestream = {lat: 6.457512, lng: 3.415343};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: livestream
+    });
+    var marker = new google.maps.Marker({
+      position: livestream,
+      map: map,
+      title: 'Dolphin Estate, Lagos. Nigeria'
+    });
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-enh1tSMKTokjHEqYftpb3Yh_kClQ_E&callback=initMap">
+</script>
+</body>
+</html>
