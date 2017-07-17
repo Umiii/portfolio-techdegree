@@ -45,7 +45,8 @@ a:hover {
 
   color:white;
   font-size:1.6rem;
-  margin:12px 0 0 20px;
+  padding:0.6rem 0 0 1.1rem;
+  margin:0;
   font-family: 'Sacramento', cursive;
   letter-spacing: 0.2rem;
 }
@@ -53,9 +54,7 @@ a:hover {
 .main-nav {
   width: 100%;
   background: #c70808;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
+  height: 85px;
   text-align: center;
   z-index:999999999;
 }
@@ -63,9 +62,9 @@ a:hover {
   display: flex;
   font-weight: 700;
   list-style-type: none;
-  margin: 15px 0 auto;
+  margin: 0.5rem 0 0 0;
   padding: 0;
-  float:right;
+  justify-content: center;
 }
 
 .nav .name {
@@ -82,25 +81,22 @@ a:hover {
 }
 
 .nav a:hover {
-  border-bottom:2px solid white;
-  padding-bottom:19px;
-  transition: all .5s;
+  border:none;
 }
 
 header {
   text-align: center;
   background: url('../images/portfolio-bg.jpg') no-repeat top center ;
   background-size: cover;
-  overflow: hidden;
   padding-top: 60px;
-  background-position: 0 -80px;
-  min-height:540px;
+  background-position:0;
+  max-height:500px;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 70px;
+  margin-top: 1.5rem;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -113,6 +109,10 @@ header .profile-image:hover {
   animation: profile-image 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+.profile-content {
+  margin-top:3rem;
 }
 
 /* Code for animation of profile image */
@@ -158,9 +158,8 @@ header .profile-image:hover {
 .tag {
   color: white;
   padding: 10px;
-  border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 0.9rem auto;
   font-weight: bold;
 } 
 .location {
@@ -267,17 +266,22 @@ a.social:hover {
 .hobbies {
   padding:0;
   margin-top:15px;
+  display:flex;
 }
 
 .hobbies li {
   display:inline-block;
-  margin-right:1px;
+  margin-right:5px;
 }
 
+.hobbies li > img {
+  max-width:100%;
+  display:block;
+}
 
-/*************************
-** Experience Page Styles **
-**************************/
+  /*************************
+  ** Experience Page Styles **
+  **************************/
 
 
 .experience {

@@ -11,21 +11,30 @@
         margin: 0 auto;
     }
 
-    header {
-        min-height: 470px;
-    }
-
-    header .profile-content {
-        margin-top:1.2rem;
-    }
-
     .nav {
         max-width: 1200px;
-        padding: 0 30px;
+        padding: 1.1rem 2rem;
+        justify-content: flex-end;
+    }
+
+    .nav a:hover {
+        border-bottom:2px solid white;
+        padding-bottom:19px;
+        transition: all .5s;
+
+    }
+
+    .main-nav {
+        max-height:62px;
     }
 
     .logo {
         float:left;
+        padding:1.3rem 0 0 1.1rem;
+    }
+
+    header {
+        height:540px;
     }
 
     main {
@@ -34,6 +43,10 @@
 
     main p {
         line-height: 1.6em;
+    }
+
+    .tag {
+        margin: 0.5rem auto;
     }
 
     .overlay-bg {
@@ -53,6 +66,7 @@
         background-size: cover;
         z-index:5;
     }
+
 
     footer {
         font-size: 1.3em;
