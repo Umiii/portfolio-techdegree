@@ -294,8 +294,13 @@ a.social:hover {
 }
 
 .projects li {
-  display: inline-block;
-  margin-right:4.2rem;
+  display: block;
+  margin:0 0 1.3rem 0;
+}
+
+.projects li > img {
+  max-width: 100%;
+  display:block;
 }
 
 .projects li:last-child {
@@ -308,12 +313,13 @@ a.social:hover {
 **************************/
 
 .contact-card {
+  max-width:100%;
   margin-top:10rem;
 }
 
 .contact-map {
   height:360px;
-  width:670px;
+  max-width:100%;
 }
 
 .social-links {

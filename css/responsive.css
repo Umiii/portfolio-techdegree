@@ -81,8 +81,19 @@
 
     }
 
+    .projects li {
+        display:inline-block;
+        margin-right:4.2rem;
+    }
+
     .contact-card {
         max-width:800px;
+    }
+
+    /* Styles for contact page */
+
+    .contact-card {
+        min-width: 75%;
     }
 
 }
