@@ -11,6 +11,10 @@
         margin: 0 auto;
     }
 
+    .card {
+        margin:10px 10px 30px 10px;
+    }
+
     .nav {
         max-width: 1200px;
         padding: 1.1rem 2rem;
@@ -79,6 +83,10 @@
     .experience {
         max-width: 1400px;
 
+    }
+
+    .projects {
+        flex-direction: row;
     }
 
     .projects li {
